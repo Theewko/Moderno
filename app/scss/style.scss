@@ -1,8 +1,27 @@
-html{
-    box-sizing: border-box;
+@import 'vars';
+@import 'global';
+@import 'fonts';
+
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    height: 91px;
+    align-items: center;
 }
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
+
+.header__text {
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+.header__box a {
+    color: #fff;
+
+}
+
+.header__btn {
+    width: 72px;
+    height: 32px;
+    background-color: #8bc34a;
+    border-radius: 10%;
 }
