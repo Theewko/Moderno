@@ -6,9 +6,17 @@ html{
 *::after{
     box-sizing: inherit;
 }
-a{
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: $color-text;
+    font-weight: 400;
+}
+a {
     display: inline-block;
-    
+    text-decoration: none;
+    color: $color-text;
 }
 ul,
 li{
