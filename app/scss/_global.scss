@@ -7,21 +7,21 @@ html {
 *::after {
     box-sizing: inherit;
 }
-html,
-body {
-	height: 100%;
+* {
+	margin: 0;
+	padding: 0;
 }
-body {
+html,
+body{
+    height: 100%; 
     @include f500;
     font-size: 15px;
     line-height: 24px;
     color: $color-text;
 }
-* {
-	margin: 0;
-	padding: 0;
+body{
+    overflow-x: hidden;
 }
-
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -92,7 +92,18 @@ li {
     margin: 0 auto;
     padding: 0 15px;
 }
-
+.angel-right{
+    position: relative;
+    padding-left: 15px;
+    &::before{
+        content: "\f105";
+        font-family: 'icomoon';
+        position: absolute;
+        left: 0;
+        color: $green;
+        font-size: 14px;
+    }
+}
 .container-fluid {
     max-width: 100%;
     margin: 0 auto;
